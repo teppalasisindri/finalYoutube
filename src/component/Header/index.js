@@ -57,12 +57,22 @@ const Header = props => {
             </DivContainers>
             <DivContainers>
               {activeTheme ? (
-                <button type="button" className="button" data-testid="theme">
-                  <MdDarkMode className="theme-icons" onClick={onTheme} />
+                <button
+                  type="button"
+                  className="button"
+                  data-testid="theme"
+                  onClick={onTheme}
+                >
+                  <MdDarkMode className="theme-icons" />
                 </button>
               ) : (
-                <button type="button" className="button" data-testid="theme">
-                  <MdLightMode className="theme-icons" onClick={onTheme} />
+                <button
+                  type="button"
+                  className="button"
+                  data-testid="theme"
+                  onClick={onTheme}
+                >
+                  <MdLightMode className="theme-icons" />
                 </button>
               )}
               <HeaderCardImages
