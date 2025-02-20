@@ -17,7 +17,7 @@ export const ListContentDiv = styled.div`
   display: flex;
   flex-direction: column;
 `
-export const Heading = styled.h1`
+export const Heading = styled.p`
   font-size: 23px;
   font-family: 'Roboto';
   color: ${props => (props.activeTheme ? '#181818' : '#f9f9f9')};

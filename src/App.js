@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, Redirect} from 'react-router-dom'
 
 import NxtWatchContext from './context/nxtWatchContext'
 import LoginForm from './component/LoginForm'
@@ -10,11 +10,12 @@ import Trending from './component/Trending'
 import Gaming from './component/Gaming'
 import VideoItemDetails from './component/VideoItemDetails'
 import NotFound from './component/NotFound'
-import './App.css'
 
 // Replace your code here
 class App extends Component {
   state = {activeTheme: true, saveList: [], save: false}
+
+  onRemove = () => {}
 
   onThemeChange = () => {
     this.setState(prevState => ({
@@ -64,7 +65,8 @@ class App extends Component {
               path="/saved-videos"
               component={SavedVideos}
             />
-            <Route component={NotFound} />
+            <ProtectedRoute path="/not-found" component={NotFound} />
+            <Redirect to="/not-found" />
           </Switch>
         </NxtWatchContext.Provider>
       </>

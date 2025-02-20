@@ -32,7 +32,7 @@ const LeftNavbar = props => {
             <LeftTopCardDiv>
               <UnOrderList>
                 <Link to="/" className="text-decoration">
-                  <ListItems>
+                  <ListItems key="1">
                     <IoHome />
                     <ParagraphElement activeTheme={activeTheme}>
                       Home
@@ -40,7 +40,7 @@ const LeftNavbar = props => {
                   </ListItems>
                 </Link>
                 <Link to="/trending" className="text-decoration">
-                  <ListItems>
+                  <ListItems key="2">
                     <FaFire />
                     <ParagraphElement activeTheme={activeTheme}>
                       Trending
@@ -48,7 +48,7 @@ const LeftNavbar = props => {
                   </ListItems>
                 </Link>
                 <Link to="/gaming" className="text-decoration">
-                  <ListItems>
+                  <ListItems key="3">
                     <SiYoutubegaming />
                     <ParagraphElement activeTheme={activeTheme}>
                       Gaming
@@ -56,7 +56,7 @@ const LeftNavbar = props => {
                   </ListItems>
                 </Link>
                 <Link to="/saved-videos" className="text-decoration">
-                  <ListItems>
+                  <ListItems key="4">
                     <IoBagAddSharp />
                     <ParagraphElement activeTheme={activeTheme}>
                       Saved videos

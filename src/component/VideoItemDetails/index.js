@@ -47,7 +47,7 @@ class VideoItemDetails extends Component {
     const response = await fetch(apiUrl, options)
     if (response.ok === true) {
       const data = await response.json()
-      console.log(data)
+
       const formattedData = {
         description: data.video_details.description,
         id: data.video_details.id,
@@ -71,7 +71,7 @@ class VideoItemDetails extends Component {
 
   render() {
     const {apiStatus, videoDetails} = this.state
-    console.log(videoDetails)
+
     return (
       <NxtWatchContext.Consumer>
         {value => {
