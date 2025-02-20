@@ -1,0 +1,16 @@
+.theme-icons {
+  height: 40px;
+  width: 40px;
+}
+.pop-container {
+  height: 250px;
+  width: 250px;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #0070c1 !important;
+}
+@media screen and (min-width: 768px) {
+  .logout-container {
+    display: none;
+  }
+}
